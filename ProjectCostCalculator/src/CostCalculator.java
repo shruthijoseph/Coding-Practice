@@ -37,7 +37,7 @@ public class CostCalculator {
 					materialMarkup=0.075;
 				if(material.equals("electronics"))
 					materialMarkup=0.02;
-				
+				//to store the result.
 				CalculatedCost=calculateCost(basePrice,no_of_persons,materialMarkup);
 				JOptionPane.showMessageDialog(null,String.format("The calculated Price is"+CalculatedCost));
 
