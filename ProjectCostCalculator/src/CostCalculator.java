@@ -30,7 +30,7 @@ public class CostCalculator {
 		        no_of_persons=Integer.parseInt(userStringInput);
 		userStringInput=JOptionPane.showInputDialog("Enter the material");
 		        material=userStringInput;
-
+//checking the condition
 		        if (material.equals("food"))
 					materialMarkup=0.13;
 				if(material.equals("drugs"))
@@ -40,7 +40,7 @@ public class CostCalculator {
 				//to store the result.
 				CalculatedCost=calculateCost(basePrice,no_of_persons,materialMarkup);
 				JOptionPane.showMessageDialog(null,String.format("The calculated Price is"+CalculatedCost));
-
+                
 	}
 
 }
