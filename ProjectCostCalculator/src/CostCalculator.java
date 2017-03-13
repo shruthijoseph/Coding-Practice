@@ -3,6 +3,13 @@ public class CostCalculator {
 
 	public static double calculateCost(double bp,int n,double mm)
 	 {
+		double finalPrice;
+		double newBasePrice;
+		//adding 5% flat markup to the base price
+		newBasePrice=bp+(0.05*bp);	
+		finalPrice=(newBasePrice)+((0.012*n*newBasePrice)+(mm*newBasePrice));
+		return finalPrice;
+
 	 }
 	/**
 	 * @param args
@@ -13,6 +20,9 @@ public class CostCalculator {
 		double basePrice;
 		int no_of_persons;
 		String material;
+		double materialMarkup=0;
+		double CalculatedCost;
+
 		
 		userStringInput=JOptionPane.showInputDialog("Enter the base price");
 				basePrice=Double.parseDouble(userStringInput);
