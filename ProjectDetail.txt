@@ -1,0 +1,8 @@
+1)imported the package java.swing.JOptionPane for message dialogs
+2)Created a Class Cost Calculator with a main method where the execution of the Java Program begins
+3)Three Inputs are extracted from the user and stored in variables basePrice,no_of_persons,material 
+4)Markup percentage of the material is initialized as per the problem
+5)Function calculateCost() is called with the three input parameters .
+6)calculateCost() calculates the new Base Price which is adding the 5% to the base price
+7)New BasePrice + No of workers multiplied by 1.2 * new BasePrice + markup material rate*New Base Price gives the final result.
+8)Final result is stored in Variable Calculated Cost and the output is displayed.
